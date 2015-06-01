@@ -80,13 +80,13 @@ Vagrant.configure(2) do |config|
     chef.json = {
       httpd: {
         port: 80,
-        docroot: "/vagrant/app/webroot"
+        docroot: "/vagrant/application/app/webroot"
       },
       php: {
         timezone: "Asia/Tokyo"
       },
       mysql: {
-        password: 'openlogi'
+        password: 'password'
       },
     }
   end

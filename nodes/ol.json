@@ -1,0 +1,21 @@
+{
+  "run_list": [
+    "recipe[yum]",
+    "recipe[base]",
+    "recipe[php55]",
+    "recipe[mysql56]"
+  ],
+  "automatic": {
+    "ipaddress": "ol"
+  },
+  "php": {
+    "timezone": "Asia/Tokyo"
+  },
+  "httpd": {
+    "port": 80,
+    "docroot": "/vagrant/application/app/webroot"
+  },
+  "mysql": {
+    "password": "vagrant"
+  }
+}
